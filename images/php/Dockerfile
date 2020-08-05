@@ -43,7 +43,7 @@ RUN docker-php-ext-enable mcrypt
 
 RUN docker-php-ext-install bcmath
 RUN docker-php-ext-install intl 
-RUN docker-php-ext-install -j$(nproc) iconv mbstring mysqli pdo_mysql zip
+RUN docker-php-ext-install -j$(nproc) iconv mbstring mysqli pdo_mysql soap zip
 RUN docker-php-ext-install xsl
 
 #RUN docker-php-ext-configure gd --with-freetype --with-jpeg 
