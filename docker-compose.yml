@@ -40,7 +40,8 @@ services:
     ports:
       - "6379:6379"
     network_mode: "host" 
-      
+    #
+
   elastic22:
     image: morozovgroup/elasticsearch:latest
     container_name: myelastic
